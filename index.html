@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BuzzBack — Reviving Yahoo Messenger for 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
+      <rect width="36" height="36" rx="10" fill="#ffc83d"/>
+      <path d="M8 11c0-2 1.6-3.5 3.5-3.5h13C26.4 7.5 28 9 28 11v9c0 2-1.6 3.5-3.5 3.5H16l-5.5 4.5v-4.5h0C9.1 23.5 8 22 8 20z" fill="#3b2a8f"/>
+      <path d="M14 13.5l2.2 2.2L14 18M19 13.5l2.2 2.2L19 18" stroke="#ffc83d" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div>BuzzBack<small>A revival concept of Yahoo Messenger</small></div>
+  </div>
+  <nav class="tabs" id="tabs"></nav>
+</header>
+
+<div class="wrap" id="view"></div>
+
+<div class="modal-bg" id="modal"><div class="modal" role="dialog" aria-modal="true">
+  <h4 id="mT"></h4><p id="mB" style="margin:0 0 14px;font-size:14px;color:var(--muted)"></p>
+  <div style="display:flex;gap:8px;justify-content:flex-end"><button class="btn" id="mNo">Edit message</button><button class="btn primary" id="mYes">Send anyway</button></div>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
